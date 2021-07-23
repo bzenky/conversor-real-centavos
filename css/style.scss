@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, #477445, rgb(9, 22, 10));
+  font-family: monospace;
+
+
+}
+
+.header {
+  text-align: center;
+  padding: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0 ,.2);
+  box-shadow: 0 0 2px gray, 0 0 8px rgb(89, 126, 89);
+  max-height: 200px;
+  color: rgb(129, 219, 141);
+  font-size: 28px;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 200px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .card {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-right: 50px;
+
+    img {
+      width: 100px;
+      animation: rotate 8s infinite linear;
+      margin-top: 20px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      margin: 15px 0;
+    }
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .3);
+      width: 170px;
+      height: 50px;
+      text-overflow: clip;
+      font-size: 24px;
+      text-align: center;
+      color: rgb(63, 133, 85);
+    }
+
+    input:focus-visible {
+      outline: none;
+    }
+
+    button {
+      background: none;
+      border: 1px solid rgb(78, 110, 103);
+      outline: none;
+      padding: 15px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      color: rgb(184, 255, 208);
+      transition: .3s ease-in-out;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: rgb(54, 161, 77);
+      color: rgb(3, 49, 2);
+      border: 1px dashed rgb(2, 24, 0);
+      box-shadow: 0 0 2px rgb(158, 255, 158), 0 0 12px rgb(158, 255, 158);
+    }
+  }
+
+  .resultado {
+    margin-top: 20px;
+
+    span {
+      font-size: 36px;
+      color: rgb(3, 49, 2);
+    }
+
+    .moedas {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      transform: scale(0);
+      transition: .3s ease-in-out;
+
+    }
+    
+    .moedas.active {
+      transform: scale(1);
+    }
+
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 18px;
+  }
+
+  .main {
+    
+    .card {
+
+      img {
+        width: 75px;
+        margin-top: 0;
+      }
+    }
+  }
+}
