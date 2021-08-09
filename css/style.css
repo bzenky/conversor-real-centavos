@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "STIX Two Text", serif;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -19,7 +21,7 @@ input[type=number] {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #477445, #8ec0f8);
+  background-color: #A3B18A;
   font-family: monospace;
 }
 
@@ -29,7 +31,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 2px gray, 0 0 8px #597e59;
   max-height: 200px;
-  color: #12461a;
+  color: #1b2922;
   text-shadow: 0 0 1px #a0fdb4;
   font-size: 28px;
 }
@@ -68,25 +70,25 @@ body {
   text-overflow: clip;
   font-size: 24px;
   text-align: center;
-  color: #367249;
+  color: #3A5A40;
 }
 .main .card input:focus-visible {
   outline: none;
 }
 .main .card button {
-  background: none;
+  background: #588157;
   border: 1px solid #4e6e67;
   outline: none;
   padding: 15px 20px;
   margin-top: 15px;
   cursor: pointer;
-  color: #313349;
+  color: #DAD7CD;
   transition: 0.3s ease-in-out;
   font-weight: bold;
   font-size: 16px;
 }
 .main .card button:hover {
-  background: #36a14d;
+  background: #DAD7CD;
   color: #021b02;
   border: 1px dashed #021800;
   box-shadow: 0 0 2px #9eff9e, 0 0 12px #9eff9e;
@@ -96,7 +98,7 @@ body {
 }
 .main .resultado span {
   font-size: 36px;
-  color: #033102;
+  color: #344E41;
 }
 .main .resultado .moedas {
   display: flex;

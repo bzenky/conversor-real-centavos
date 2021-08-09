@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'STIX Two Text', serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -19,7 +22,8 @@ input[type=number] {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #477445, rgb(142, 192, 248));
+  // background-image: linear-gradient(to bottom, #477445, rgb(142, 192, 248));
+  background-color: #A3B18A;
   font-family: monospace;
 }
 
@@ -29,9 +33,10 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0 ,.2);
   box-shadow: 0 0 2px gray, 0 0 8px rgb(89, 126, 89);
   max-height: 200px;
-  color: rgb(18, 70, 26);
+  color: #1b2922;
   text-shadow: 0 0 1px rgb(160, 253, 180);
   font-size: 28px;
+
 }
 
 .main {
@@ -70,7 +75,7 @@ body {
       text-overflow: clip;
       font-size: 24px;
       text-align: center;
-      color: rgb(54, 114, 73);
+      color: #3A5A40;
     }
 
     input:focus-visible {
@@ -78,20 +83,20 @@ body {
     }
 
     button {
-      background: none;
+      background: #588157;
       border: 1px solid rgb(78, 110, 103);
       outline: none;
       padding: 15px 20px;
       margin-top: 15px;
       cursor: pointer;
-      color: rgb(49, 51, 73);
+      color: #DAD7CD;
       transition: .3s ease-in-out;
       font-weight: bold;
       font-size: 16px;
     }
 
     button:hover {
-      background: rgb(54, 161, 77);
+      background: #DAD7CD;
       color: rgb(2, 27, 2);
       border: 1px dashed rgb(2, 24, 0);
       box-shadow: 0 0 2px rgb(158, 255, 158), 0 0 12px rgb(158, 255, 158);
@@ -103,7 +108,7 @@ body {
 
     span {
       font-size: 36px;
-      color: rgb(3, 49, 2);
+      color: #344E41;
     }
 
     .moedas {
